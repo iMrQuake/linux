@@ -55,7 +55,12 @@ ufw allow out on eth0 log to 10.0.2.0/24 'comment local_network'
 ```
 ## repeat for each VPN server/port/proto
 ```
-ufw allow out log to VPN_IP port VPN_PORT proto VPN_PROTO comment 'allow VPN server IP to be reach to establish connection'
+sudo ufw allow out log from any to VPN_IP port VPN_PORT proto VPN_PROTO comment 'allow VPN server IP to be reach to establish connection'
+sudo ufw allow out log from any to 172.94.102.4 comment 'ivacy denmark'
+sudo ufw allow out log from any to 172.94.12.4  comment 'ivacy germany'
+sudo ufw allow out log from any to 194.242.195.227  comment 'ivacy luxembourg'
+sudo ufw allow out log from any to 188.72.98.4  comment 'ivacy netherlands'
+sudo ufw allow out log from any to 172.111.246.4  comment 'ivacy sweden'
 ```
 ## VPN connection should work
 check with https://www.dnsleaktest.com and check DNS are the one from the VPN provider not from your ISP
