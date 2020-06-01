@@ -55,7 +55,8 @@ ufw allow out on eth0 log to 10.0.2.0/24 'comment local_network'
 ```
 ## repeat for each VPN server/port/proto
 ```
-ufw allow out log to VPN_IP port VPN_PORT proto VPN_PROTO comment 'allow VPN server IP to be reach to establish connection'```
+ufw allow out log to VPN_IP port VPN_PORT proto VPN_PROTO comment 'allow VPN server IP to be reach to establish connection'
+```
 ## VPN connection should work
 check with https://www.dnsleaktest.com and check DNS are the one from the VPN provider not from your ISP
 
