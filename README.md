@@ -28,4 +28,9 @@
 ## Check with
 ```ip a```
 
+## IPV4 forwarding for UFW
+`nano /etc/default/ufw.conf`
+`DEFAULT_FORWARD_POLICY="ACCEPT"`
+
+
 
