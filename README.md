@@ -25,5 +25,7 @@
 
 `update-grub`
 
+## Check with
+```ip a```
 
 
